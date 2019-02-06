@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcuts icon" type="image/png" href="logotp.png">
   <meta name="description" content="The Computer Club is the Official club of the department of Computer Science and engineering of SGSITS College, Indore (M.P.). This official web page contains all the necessary information regarding the computer club,a club by the CSE students of the college.">
-<meta name="image" content="logotp.png" >
   <meta name="keywords" content="Computer Club,Buddy,Events,SGSITS,Computer Science,CSE,initiative,student companion programme,computer engineering department,CSE dept,Heuristic,SGSITS Indore,Shri Govindram Seksaria Institute of Technology and Science,ABHIKALITRA,BOOTCAMP
 ,Shri GS Institute of Technology and Science">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -39,7 +38,7 @@
       margin-bottom: 30px;
   }  
   .jumbotron {
-      background-color: darkblue;
+      background-color: #285169;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
@@ -102,7 +101,7 @@
  	li a:hover
   {
   	text-decoration: none;
-  	color: white;
+  	color: green;
   }
  
   	p a:hover
@@ -213,20 +212,71 @@
         font-size: 150px;
     }
   }
+  .panel {
+    border: 1px solid #285169; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #285169 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .vl
+  {
+  	border-left: 4px solid #285169;
+  	height: 60px;
+  	position: absolute;
+  	left: 50%;
+  	margin-left: -3px;
+  	padding-bottom: 10px;
+  	  }
   </style>
 </head>
 <body id="mp" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
+
     <div class="navbar-header">
+      
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
          <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#mp">COMPUTER CLUB</a>
+
+      <a class="navbar-brand" href="#mp"><strong> COMPUTER CLUB</strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -248,18 +298,33 @@
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
-  <div class="row">
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12" style="padding: 50px">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>News & Updates</h1>
+        </div>
+        <div class="panel-body">
+        	<marquee  direction="up" scrolldelay=180 onmouseover="this.stop();" onmouseout="this.start();">
+        		<ul style="list-style-type:disc;">
+        <li><a href="https://goo.gl/forms/7Xamp7F77551TZBj2" title="Heuristics 2.0" target="_blank">Heuristics 2.0</a> </li>
+         <li> <a title="Comming Soon"><strong>"BOOTCAMP"</strong>: Remedial classes for I<sup>st</sup> year students </a></li>
+         <li> <a> R language workshop for II<sup>nd</sup> year students</a></li>
+         <li> <a>Repository- resources and references</a> </li>
+      </marquee>
+        </div>
+        
+      </div>      
+    </div>     
+  
 
-     <div class="col-sm-4">
-      <img src="logotp.png" alt="Club Logo" width="280" height="280">
-    </div>
 
     <div class="col-sm-8">
-      <h2>About Computer Club</h2>
-      <h4>We at Computer Club are a union of people who are Technology and Coding fanatics. Not just limited to programming, we also facilitate an overall development as an engineer through nurturing tools like internships, workshops, demos and oodles of related activities. Faculty and students here are all devoted to betterment of logic building and situation handling aspects of an engineer's personality.</h4>
+      <h2>About Us</h2>
+      <h4>We at Computer Club are a union of people who are technology and coding fanatics. Not just limited to programming, we also facilitate an overall development as an engineer through nurturing tools like internships, workshops, demos and oodles of related activities. Faculty members and students here are all devoted to betterment of logic building and situation handling aspects of an engineer's personality.</h4>
       <p>
 
-      The club acts as a support system for the students to get work experience through practical projects and complete their technical part of personality. It aims at providing work experience starting right from the 1st year, uplifting the technological standard of students, and bringing in the culture of work while you play. Overall, it is a great space for students to learn and implement.</p>
+      The club acts as a support snystem for the students to get work experience through practical projects and complete their technical part of personality. It aims at providing work experience starting right from the 1st year, uplifting the technological standard of students, and bringing in the culture of work while you play. Overall, it is a great space for students to learn and implement.</p>
     </p>
   
     </div>
@@ -268,9 +333,9 @@
 </div>
 
 <div class="container-fluid bg-grey">
-  <div class="row">
+  <div class="row slideanim">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      <img src="logotp.png" width="300" height="300">
     </div>
     <div class="col-sm-8">
       <h2>Our Values</h2>
@@ -280,7 +345,7 @@ The motive of this club in a larger sense is comprehensive development of studen
 Not only do we foster engineering skills, we also strive to cultivate soft skills that makes one not only an excellent engineer but also a reverent human being.<br/> 
 It is our steadfast belief that it's more than necessary that the young and spirited students we cater, hold robust personalities and skill sets that incorporate eloquence, confidence, healthy communication, and above all, never ending love for learning, growing, making mistakes and getting back up.<br/></h4>
       <p><strong>VISION:</strong>
-        Our vision is to create a mileu of people who will become eminent in all domains and to cater to everyone who aspires to delve into the world of computers, languages, networks and what not.We value constant hustle to serve our best every time and to serve new admittedly.</div>
+        Our vision is to create a mileu of people who will become eminent in all domains and to cater to everyone who aspires to delve into the world of computers, languages, networks and what not.</div>
   </div>
 </div>
 
@@ -313,84 +378,65 @@ It is our steadfast belief that it's more than necessary that the young and spir
   <h2>Portfolio</h2><br/>
   <p>We organize activities in programming, competitive coding, hackathons etc. We also indulge in internships, expert lectures, workshops, prep talks, interaction sessions and piles more of activities. We believe that each of these holds its own significance and service. Our activities are the heart of this learning journey and we ensure that everything we do reaps welfare.</p><br/><br/>
   <div class="row text-center slideanim">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="heuristics.jpg" alt="Heuristic" width="400" height="300">
+        <img src="heuristics.jpg" alt="Heuristic" width="300" height="300">
         <p><strong>Heuristic</strong></p>
         <p>Coding competition.</p>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="pp2.jpeg" alt="Event" width="400" height="300">
+        <img src="pp2.jpeg" alt="Event" width="300" height="300">
         <p><strong>Orientation Programme</strong></p>
         <p>Interaction that nurtures(CSE I year).</p>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="pp3.jpg" alt="presentation" width="400" height="300">
+        <img src="pp3.jpg" alt="presentation" width="300" height="300">
         <p><strong>Presentations</strong></p>
         <p>Introduction to CSE, SGSITS.</p>
       </div>
+  </div>
+     <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="cws.jpeg" alt="Code with the Flow" width="300" height="300">
+        <p><strong>Code with the Flow</strong></p>
+        <p>A coding competition held during the annual college fest, Aayam, 2K18.</p>
+      </div> 
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="last1.jpeg" alt="Allumini meet" width="400" height="300">
+        <img src="last1.jpeg" alt="Allumini meet" width="300" height="300">
         <p><strong>Alumini Meet</strong></p>
-        <p>Alumni meet of department held and managed by Computer Club.</p>
+        <p>Alumni meet of department managed by Computer Club.</p>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="aws.jpeg" alt="AWS" width="400" height="300">
+        <img src="aws.jpeg" alt="AWS" width="300" height="300">
         <p><strong>AWS</strong></p>
         <p>An alumni week session for students to grab information about internships and its importance.</p>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="cws.jpeg" alt="Code eith Flow" width="400" height="300">
-        <p><strong>Code with the Flow</strong></p>
-        <p>A coding competition held during the annual college fest, Aayam, 2K18.</p>
+        <img src="written.jpeg" alt="Written Test" width="300" height="300">
+        <p><strong>Recruitment Test</strong></p>
+        <p>Written Test on Moode Round-I</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="pi.jpeg" alt="Pi" width="300" height="300">
+        <p><strong>Recruitment Interview</strong></p>
+        <p>Personal interview, Round-II</p>
       </div>
     </div>
 
-  </div><br/><br/><hr noshade="10%" />
-  
-  <h2>OUR BELIEVES</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"A person who never made a mistake, never tried anything new !"<br><span>Albert Eienstien</span></h4>
-      </div>
-      <div class="item">
-        <h4>"The strength of the team is each individual member. The strength of each member is the team."<br><span>Phil Jackson</span></h4>
-      </div>
-      <div class="item">
-        <h4>"It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends"<br><span>Albus Dumbledore (Harry Potter and the sorcerer's stone)</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+  </div><br/><br/>
 </div>
 
 <!-- Container (Pricing Section) -->
@@ -424,13 +470,52 @@ Each of us involved in this program will continue to undertake the responsibilit
   </div>
 </div>
 
+<div class="container-fluid bg-grey">
+	<div class="vl slideanim"></div></br></br>
+	  <div class="text-center slideanim">
+	  <h2 style="letter-spacing: 5px">TEAM</h2>
+	</div>
+	
+<div class="row">
+  <div id="myCarousel" class="carousel slide text-center col-sm-12" data-ride="carousel">
+    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
 
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	      <div class="item active">
+	        <img src="c1.jpeg" alt="Team" width="1200" height="300">
+	      </div>
+	      <div class="item">
+	        <img src="cr1.jpeg" alt="Team" width="1200" height="300">
+	      </div>
+	      <div class="item">
+	        <img src="orecru.jpeg" alt="Team" width="1200" height="300">
+	      </div>
+	    </div>
+
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+  </div>
+</div>
+</div>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid" style="background-color: #333;">
   <h2 class="text-center" style="color: white;letter-spacing: 6px " >CONTACT</h2>
   <br/>
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <p style="color: white;">Contact us</p>
       <p><span class="glyphicon glyphicon-map-marker " style="color: white; padding: 5px 5px; "></span>  <a href="https://goo.gl/maps/rvNM4zoULpQ2" title="Location" target="_blank">CSE dept. SGSITS,Indore (M.P.)</a> </p>
       <p><span class="glyphicon glyphicon-phone" style="color: white; padding: 5px 5px; "></span>  +91  9131817212</p>
@@ -439,19 +524,14 @@ Each of us involved in this program will continue to undertake the responsibilit
       <p style="color: white;">Know more</p>
       <p><span class="glyphicon glyphicon-search" style="color: white; padding: 5px 5px; " ></span>Visit: <a href="http://www.sgsits.ac.in/academics/departments/department-of-computer-engineering" target="_blank" title="College Website">www.sgsits.ac.in</a></p>
     </div>
-    <div class="col-sm-5">
-        <p style="color: white;" align="center">News & Updates</p>
-      <ul>
-      	<li> <a href="https://goo.gl/forms/bYfpydFCJtjUJDqo2" title="Get registered" target="_blank">Recruitments 2019</a></li>
-        <li><a title="Comming Soon"><strong>"BOOTCAMP"</strong>: Remedial classes for I<sup>st</sup> year students </a></li>
-        <li> <a> R language workshop for II<sup>nd</sup> year students</a></li>
-        <li> <a>Repository- resources and references</a> </li>
-      </ul>
+  <div class="col-sm-4">
+    	<p style="color: white" >ABHIKALITRA</p>
+      <p>Visit the CSE Department latest magzine. <a href="https://drive.google.com/open?id=1sx7y4-xls3MOF7btEHD5Tui0SHKVdiK0" target="_blank"> Click here</a></p>
+      
     </div>
 
     <div class="col-sm-4">
-    	<p style="color: white" >ABHIKALITRA</p>
-      <p>Visit the CSE Department latest magzine. <a href="https://drive.google.com/open?id=1sx7y4-xls3MOF7btEHD5Tui0SHKVdiK0" target="_blank"> Click here</a></p>
+    	
         <p style="color: white;" >Feedback</p>
       <p>Give us your valuable feedback on:	<a href="https://docs.google.com/forms/d/e/1FAIpQLSeeKeiDLKrm2Bql9DY7c8gGBCLETgIgAltO5fHK47yIcwH_Cg/viewform?usp=sf_link" target="_blank"> Click here</a></p>
       
